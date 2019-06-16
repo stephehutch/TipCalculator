@@ -1,13 +1,13 @@
 
 //hide warning on page load
- $('#warning').hide()
+$('#warning').hide()
 
 //initalize veriables
 let bill;
 let people;
 let tip;
 let calculatedTip;
-
+let calculatedTotal;
 
 
 //function that displays tip when keyboard calculate button is pressed
@@ -25,13 +25,18 @@ event.preventDefault()
         tip = tip * 100
       }
 
-  //operation that returns tip
+  //operation that returns tip 
   calculatedTip = ((bill * (tip / 100)) / people).toFixed(2)
+
+  //operation that returns total
+  calculatedTotal = Number(calculatedTip) + Number(bill)
+ 
 
   if (isNaN(calculatedTip)) {
   $('#warning').show();
   } else {
-    $('#calculatedTip').text("$" + calculatedTip);
+    $('#calculatedTip').text("  Tip:  $" + calculatedTip);
+   $('#calculatedTotal').text("  Total:  $" + calculatedTotal);
   }
 
 
