@@ -1,0 +1,29 @@
+
+body {
+  background: url(https://cdn.hipwallpaper.com/i/7/75/74fe1x.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+.keypadNum {
+  margin: 2%;
+}
+
+.no-outline {
+  border: 0px;
+}
+
+.right {
+  float: right
+}
+
+.left {
+   float: left
+}
+
+ .keypad-sumit {
+   color: white;
+    background-color: rgb(25, 139, 111) 
+} 
+ .keypad-sumit:hover{
+    background-color: rgb(21, 120, 101) ;
+} 
